@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  background: linear-gradient(-90deg, rgb(240, 240, 245) , rgb(250, 250, 250));
+  font-family: Courier New;
+} 
+h1, h2 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 48px;
+  color: rgb(133, 133, 133);
+}
+button, input {
+  background: rgb(143, 142, 142);
+  color: rgb(255, 255, 255);
+}

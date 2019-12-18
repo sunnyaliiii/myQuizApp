@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<!-- HTML root element with ally language attribute -->
+<html lang="en">
+  <head>
+  <!-- title of app -->
+  <title>BMW Challenge Quiz</title>
+  <!-- charset tells the browser what character set we're using -->
+  <meta charset="utf-8">
+  <!-- responsive viewport tag -->
+  <meta name="viewport" content="widtch=device=widtg, intial-scale">
+  <!-- page description -->
+  <meta name="description" content="Create and Test your App Idea">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <!-- style sheets for CSS, main JavaScript, and Quiz Questions -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="quiz.js"></script>
+  <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Start Page -->
+      <h1>BMW Challenge Quiz</h1>
+        <p>Lets see how well you really know BMW.. Take the quiz to find out!</p>
+        <!-- Question Page -->
+        <form role="form" action="/quiz" accept-charset="UTF-8" class='quiz'>
+          <fieldset>
+            <legend>
+              <p>Which of the following was the first car EVER made by BMW:</p>
+            </legend>
+              <ol type="A">
+                <li><label for="answerA">"Motor-wagon A."</label><option id="answerA" name="answer"value="0"></li>
+                <li><label for="answerB">"The Dixi"</label><option id="answerB" name="answer" value="0"></li>
+                <li><label for="answerC">"Sport-Phaeton"</label><option id="answerC" name="answer"
+                value="0"></li>
+                <li><label for="answerD">"Cybertruck"</label><option id="answerD" name="answer"
+                value="0"></li>
+              </ol> 
+              <input type="submit">
+          </fieldset>
+        </form>
+      <!-- Feedback Page -->
+        <h2>Sorry, that's incorrect...</h2>
+        <p>The correct answer was B.</p>
+        <button id="nextQuestionButton">Next Question</button>
+      <!-- Score Page -->
+        <h2>Congratulations! You finished the quiz!</h2>
+        <p>You got 10/10</p>
+        <p>Wow. Great Job!</p>
+        <button id="restartQuizButton">Restart Quiz</button>
+        </main>
+  </body>
+</html>
